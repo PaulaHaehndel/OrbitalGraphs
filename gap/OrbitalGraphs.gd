@@ -6,7 +6,7 @@
 
 #! @Description
 #!   This attribute is an immutable list of all orbital graphs of
-#!   a transformation semigroup or permutation group
+#!   a transformation semigroup or permutation group.
 DeclareAttribute("OrbitalGraphs", IsPermGroup);
 #DeclareAttribute("OrbitalGraphsRepresentative", IsPermGroup);
 DeclareAttribute("OrbitalGraphs", IsTransformationSemigroup);
@@ -23,20 +23,23 @@ DeclareAttribute("OrbitalClosure", IsPermGroup);
 DeclareAttribute("OrbitalIndex", IsPermGroup);
 
 #! @Description
-#!   The group <M>G</M> is <E>orbital graph recognisable</E>
+#!   The permutation group <M>G</M> is <E>orbital graph recognisable</E>
 #!   if and only if <M>G = OrbitalClosure(G)</M>.
 DeclareProperty("IsOrbitalGraphRecognisable", IsPermGroup);
 
 
 #! @Description
-#!   The group <M>G</M> is <E>strongly orbital graph recognisable</E>
+#!   The permutation group <M>G</M> is <E>strongly orbital graph recognisable</E>
 #!   if and only if there exists an orbital graph <M>\Gamma</M> of
 #!   <M>G</M> such that the automorphism group of <M>\Gamma</M> is
 #!   <M>G</M>.
 DeclareProperty("IsStronglyOrbitalGraphRecognisable", IsPermGroup);
 
 #! @Description
-#!  TODO
+#!   The permutation group <M>G</M> is <E>absolutely orbital graph recognisable</E>
+#!   if and only if for every orbital graph <M>\Gamma</M> of
+#!   <M>G</M> the automorphism group of <M>\Gamma</M> is
+#!   <M>G</M>.
 DeclareProperty("IsAbsolutelyOrbitalGraphRecognisable", IsPermGroup);
 
 # TODO: Sebastian tells me this is dangerous.
