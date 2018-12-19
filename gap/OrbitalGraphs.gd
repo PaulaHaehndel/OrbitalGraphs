@@ -29,7 +29,10 @@ DeclareProperty("IsOrbitalGraphRecognisable", IsPermGroup);
 
 
 #! @Description
-#!  TODO
+#!   The group <M>G</M> is <E>strongly orbital graph recognisable</E>
+#!   if and only if there exists an orbital graph <M>\Gamma</M> of
+#!   <M>G</M> such that the automorphism group of <M>\Gamma</M> is
+#!   <M>G</M>.
 DeclareProperty("IsStronglyOrbitalGraphRecognisable", IsPermGroup);
 
 #! @Description
