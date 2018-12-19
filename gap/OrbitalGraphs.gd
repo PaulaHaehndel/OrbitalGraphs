@@ -24,7 +24,7 @@ DeclareAttribute("OrbitalIndex", IsPermGroup);
 
 #! @Description
 #!   The group <M>G</M> is <E>orbital graph recognisable</E>
-#!   if <M>G = OrbitalClosure(G)</M>.
+#!   if and only if <M>G = OrbitalClosure(G)</M>.
 DeclareProperty("IsOrbitalGraphRecognisable", IsPermGroup);
 
 
