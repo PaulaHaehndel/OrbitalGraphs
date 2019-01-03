@@ -4,12 +4,19 @@
 # Declarations
 #
 
+#! @Chapter OrbitalGraphs
+
+#! @Section Attributes
+#!  Information about the existing attributes.
+
 #! @Description
 #!   This attribute is an immutable list of all orbital graphs of
 #!   a transformation semigroup or permutation group.
 DeclareAttribute("OrbitalGraphs", IsPermGroup);
-#DeclareAttribute("OrbitalGraphsRepresentative", IsPermGroup);
 DeclareAttribute("OrbitalGraphs", IsTransformationSemigroup);
+
+#DeclareAttribute("OrbitalGraphsRepresentative", IsPermGroup);
+
 
 #! @Description
 #!   The <E>orbital closure</E> of a permutation group <M>G</M>
@@ -21,6 +28,11 @@ DeclareAttribute("OrbitalClosure", IsPermGroup);
 #!   The <E>orbital index</E> of a permutation group <M>G</M>
 #!   is the index <M>G</M> in <C>OrbitalClosure(G)</C>.
 DeclareAttribute("OrbitalIndex", IsPermGroup);
+
+#! @EndSection
+
+#! @Section Properties
+#!  Information about the existing properties.
 
 #! @Description
 #!   The permutation group <M>G</M> is <E>orbital graph recognisable</E>
@@ -47,4 +59,5 @@ DeclareSynonym("IsOGR", IsOrbitalGraphRecognisable);
 DeclareSynonym("IsStronglyOGR", IsStronglyOrbitalGraphRecognisable);
 DeclareSynonym("IsAbsolutelyOGR", IsAbsolutelyOrbitalGraphRecognisable);
 
+#! @EndSection
 
